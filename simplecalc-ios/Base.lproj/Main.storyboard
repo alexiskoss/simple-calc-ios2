@@ -48,6 +48,9 @@
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="pressAdvancedOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dXy-p1-qC2"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uyb-yi-gn6">
                                                 <rect key="frame" x="85.5" y="0.0" width="78" height="80"/>
@@ -62,6 +65,9 @@
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="pressAdvancedOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TRl-Yz-bol"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tdy-Gu-Cxd">
                                                 <rect key="frame" x="171.5" y="0.0" width="77.5" height="80"/>
@@ -76,6 +82,9 @@
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="pressAdvancedOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QcQ-Ef-w7o"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="59K-bh-LjL">
                                                 <rect key="frame" x="257" y="0.0" width="77.5" height="80"/>
@@ -90,6 +99,9 @@
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="pressAdvancedOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Uo-Yg-Ssk"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -135,6 +147,9 @@
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="changeSign:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xhp-h5-nkQ"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hEB-MW-P4X">
                                                 <rect key="frame" x="256.5" y="0.0" width="78" height="80"/>
@@ -152,6 +167,9 @@
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="pressDivide:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qg2-E3-i5y"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -176,7 +194,6 @@
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="numberPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q4m-aP-WrB"/>
-                                                    <action selector="pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yom-ou-qmf"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMp-7F-2LX">
@@ -194,7 +211,6 @@
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="numberPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qce-HA-qU0"/>
-                                                    <action selector="pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="feI-Rw-EY4"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tHt-mO-Fiq">
@@ -212,7 +228,6 @@
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="numberPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V2D-SE-rID"/>
-                                                    <action selector="pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Fc-05-lka"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y0V-Xh-zrH">
@@ -228,6 +243,9 @@
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="pressMultiply:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jet-3C-kJ5"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -252,7 +270,6 @@
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="numberPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5XZ-RX-ZZc"/>
-                                                    <action selector="pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QPK-gp-Tpl"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fgU-AZ-Khj">
@@ -270,7 +287,6 @@
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="numberPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q2W-Zh-Px5"/>
-                                                    <action selector="pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="57w-Kl-apZ"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rkm-zE-zYB">
@@ -288,7 +304,6 @@
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="numberPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y1q-f9-7nr"/>
-                                                    <action selector="pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3XX-OD-R8k"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qYM-hx-9M2">
@@ -304,6 +319,9 @@
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="pressSubtract:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dpv-dw-n64"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -328,7 +346,6 @@
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="numberPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oPw-Zh-51g"/>
-                                                    <action selector="pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Hm-Fo-y21"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gpm-I0-0DR">
@@ -346,7 +363,6 @@
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="numberPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XMi-ma-QdF"/>
-                                                    <action selector="pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y92-od-WkM"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IbD-A3-yg0">
@@ -364,7 +380,6 @@
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="numberPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="piD-cy-R87"/>
-                                                    <action selector="pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nPu-lw-fIK"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HHY-sq-tCX">
@@ -380,6 +395,9 @@
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="pressAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="88F-1e-OYV"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -407,7 +425,6 @@
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="numberPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FeR-4F-h8U"/>
-                                                    <action selector="pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F8H-Ee-WAg"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WuX-hw-Ia1">
@@ -426,6 +443,9 @@
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="pressEqual:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XxO-oT-LTI"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>

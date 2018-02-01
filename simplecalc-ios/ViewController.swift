@@ -13,18 +13,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var outputLabel: UILabel!
     var currentNumber: String = ""
     var listOfNumbers: [Double] = []
+    var operation: String = ""
+    var listOfOperations: [String] = []
+    var sign: String = "+"
+    var total: Double = 0
     
-    @IBAction func pressed(_ sender: Any) {
-    }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 
     @IBAction func numberPress(_ sender: UIButton) {
         currentNumber += sender.currentTitle!
@@ -32,8 +26,88 @@ class ViewController: UIViewController {
     }
     
     @IBAction func clearPress(_ sender: UIButton) {
-        currentNumber = ""
-        outputLabel.text = "0"
+        if(outputLabel.text != "0" && operation == "") {
+            outputLabel.text = "0"
+            total = 0
+            currentNumber = ""
+        } else if(outputLabel.text != "0" && operation != "") {
+            outputLabel.text = "0"
+            currentNumber = ""
+        }
+    }
+    
+    @IBAction func changeSign(_ sender: UIButton) {
+        if(sign == "+") {
+            sign = "-"
+            currentNumber = sign + currentNumber
+            outputLabel.text = currentNumber
+        } else {
+            sign = "+"
+            currentNumber = String(currentNumber.suffix(currentNumber.count - 1))
+            outputLabel.text = currentNumber
+        }
+    }
+    
+    @IBAction func pressAdd(_ sender: UIButton) {
+        if(currentNumber != "") {
+            listOfNumbers.append(Double(currentNumber)!)
+            currentNumber = ""
+        }
+        operation = "+"
+    }
+    
+    @IBAction func pressSubtract(_ sender: UIButton) {
+
+    }
+    
+    @IBAction func pressMultiply(_ sender: UIButton) {
+
+    }
+    
+    @IBAction func pressDivide(_ sender: UIButton) {
+
+    }
+
+    @IBAction func pressAdvancedOperation(_ sender: UIButton) {
+    }
+    
+    @IBAction func pressEqual(_ sender: UIButton) {
+        if(currentNumber != "") {
+            listOfNumbers.append(Double(currentNumber)!)
+            currentNumber = ""
+        }
+        
+        if(listOfNumbers.count == 2) {
+            switch operation {
+            case "+":
+                total += listOfNumbers[0] + listOfNumbers[1]
+                outputLabel.text = String(total)
+            default:
+                total = 0
+            }
+            listOfNumbers = []
+            operation = ""
+        } else if(total != 0) {
+            switch operation {
+            case "+":
+                total += listOfNumbers[0]
+                outputLabel.text = String(total)
+            default:
+                total = 0
+            }
+            listOfNumbers = []
+            operation = ""
+        }
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
 }
 
