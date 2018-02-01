@@ -10,6 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var outputLabel: UILabel!
+    var currentNumber: String = ""
+    var listOfNumbers: [Double] = []
+    
+    @IBAction func pressed(_ sender: Any) {
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +26,14 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func numberPress(_ sender: UIButton) {
+        currentNumber += sender.currentTitle!
+        outputLabel.text = currentNumber
+    }
+    
+    @IBAction func clearPress(_ sender: UIButton) {
+        currentNumber = ""
+        outputLabel.text = "0"
+    }
 }
 
