@@ -57,15 +57,27 @@ class ViewController: UIViewController {
     }
     
     @IBAction func pressSubtract(_ sender: UIButton) {
-
+        if(currentNumber != "") {
+            listOfNumbers.append(Double(currentNumber)!)
+            currentNumber = ""
+        }
+        operation = "-"
     }
     
     @IBAction func pressMultiply(_ sender: UIButton) {
-
+        if(currentNumber != "") {
+            listOfNumbers.append(Double(currentNumber)!)
+            currentNumber = ""
+        }
+        operation = "*"
     }
     
     @IBAction func pressDivide(_ sender: UIButton) {
-
+        if(currentNumber != "") {
+            listOfNumbers.append(Double(currentNumber)!)
+            currentNumber = ""
+        }
+        operation = "/"
     }
 
     @IBAction func pressAdvancedOperation(_ sender: UIButton) {
@@ -82,6 +94,15 @@ class ViewController: UIViewController {
             case "+":
                 total += listOfNumbers[0] + listOfNumbers[1]
                 outputLabel.text = String(total)
+            case "-":
+                total += listOfNumbers[0] - listOfNumbers[1]
+                outputLabel.text = String(total)
+            case "*":
+                total += listOfNumbers[0] * listOfNumbers[1]
+                outputLabel.text = String(total)
+            case "/":
+                total += listOfNumbers[0] / listOfNumbers[1]
+                outputLabel.text = String(total)
             default:
                 total = 0
             }
@@ -91,6 +112,15 @@ class ViewController: UIViewController {
             switch operation {
             case "+":
                 total += listOfNumbers[0]
+                outputLabel.text = String(total)
+            case "-":
+                total -= listOfNumbers[0]
+                outputLabel.text = String(total)
+            case "*":
+                total *= listOfNumbers[0]
+                outputLabel.text = String(total)
+            case "/":
+                total /= listOfNumbers[0]
                 outputLabel.text = String(total)
             default:
                 total = 0
