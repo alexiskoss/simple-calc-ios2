@@ -132,6 +132,19 @@ class ViewController: UIViewController {
     }
     
     @IBAction func pressFact(_ sender: UIButton) {
+        //var factorial = Int(currentNumber)
+        var factorialTotal: Int = 1
+        if(currentNumber != "") {
+            if let number = Int(currentNumber) {
+                for index in 2...number {
+                    factorialTotal *= index
+                }
+            }
+        }
+        total = Double(factorialTotal)
+        outputLabel.text = String(total)
+        currentNumber = ""
+        listOfNumbers = []
     }
     
     @IBAction func pressMod(_ sender: UIButton) {
