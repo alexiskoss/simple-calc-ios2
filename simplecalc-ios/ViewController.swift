@@ -59,7 +59,7 @@ class ViewController: UIViewController {
             }
         }*/
         
-        if(sign == "+") {
+        /*if(sign == "+") {
             sign = "-"
             currentNumber = "-" + currentNumber
             outputLabel.text = currentNumber
@@ -71,7 +71,7 @@ class ViewController: UIViewController {
            // let output = outputLabel.text?.index((outputLabel.text?.startIndex)!, offsetBy: (outputLabel.text?.count)!);
                 outputLabel.text = currentNumber
             }
-        }
+        }*/
     }
     
     @IBAction func pressAdd(_ sender: UIButton) {
@@ -105,21 +105,7 @@ class ViewController: UIViewController {
         }
         operation = "/"
     }
-
-    /*@IBAction func pressAdvancedOperation(_ sender: UIButton) {
-        let advancedOperation: String = sender.currentTitle!
-        var operationCount: Int = 0
-        switch advancedOperation {
-        case "count":
-            operationCount += operationCount
-            
-        /*case "avg":
-        case "fact":
-        case "mod":*/
-        case "default":
-            total = 0
-        }
-    }*/
+    
     @IBAction func pressCount(_ sender: UIButton) {
         if(currentNumber != "") {
             listOfNumbers.append(Double(currentNumber)!)
@@ -129,6 +115,11 @@ class ViewController: UIViewController {
     }
     
     @IBAction func pressAvg(_ sender: UIButton) {
+        if(currentNumber != "") {
+            listOfNumbers.append(Double(currentNumber)!)
+            currentNumber = ""
+        }
+        operation = "avg"
     }
     
     @IBAction func pressFact(_ sender: UIButton) {
@@ -161,7 +152,7 @@ class ViewController: UIViewController {
             currentNumber = ""
         }
         
-        if(listOfNumbers.count == 2) {
+        if(listOfNumbers.count >= 2) {
             switch operation {
             case "+":
                 total += listOfNumbers[0] + listOfNumbers[1]
@@ -178,12 +169,19 @@ class ViewController: UIViewController {
             case "%":
                 total += listOfNumbers[0].truncatingRemainder(dividingBy: listOfNumbers[1])
                 outputLabel.text = String(total)
+            case "avg":
+                var sumTotal: Double = 0;
+                for number in listOfNumbers {
+                    sumTotal += number
+                }
+                total = sumTotal / Double(listOfNumbers.count)
+                outputLabel.text = String(total);
             default:
                 total = 0
             }
             listOfNumbers = []
             operation = ""
-        } else if(total != 0) {
+        } else if(total != 0) { //allows you to perform operations on equaled totals
             switch operation {
             case "+":
                 total += listOfNumbers[0]

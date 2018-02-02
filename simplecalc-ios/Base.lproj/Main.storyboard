@@ -113,7 +113,7 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Nh-fL-0fO">
                                                 <rect key="frame" x="0.0" y="0.0" width="163" height="80"/>
-                                                <color key="backgroundColor" red="0.20535462199999999" green="0.20968829310000001" blue="0.20509145710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.3178869099958323" green="0.32501189720812185" blue="0.32185730304261356" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="163" id="KVL-i1-Fu7"/>
                                                 </constraints>
