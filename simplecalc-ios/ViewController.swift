@@ -169,13 +169,15 @@ class ViewController: UIViewController {
             case "%":
                 total += listOfNumbers[0].truncatingRemainder(dividingBy: listOfNumbers[1])
                 outputLabel.text = String(total)
+            case "count":
+                outputLabel.text = String(listOfNumbers.count)
             case "avg":
-                var sumTotal: Double = 0;
+                var sumTotal: Double = 0
                 for number in listOfNumbers {
                     sumTotal += number
                 }
                 total = sumTotal / Double(listOfNumbers.count)
-                outputLabel.text = String(total);
+                outputLabel.text = String(total)
             default:
                 total = 0
             }
