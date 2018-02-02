@@ -14,11 +14,8 @@ class ViewController: UIViewController {
     var currentNumber: String = ""
     var listOfNumbers: [Double] = []
     var operation: String = ""
-    //var listOfOperations: [String] = []
     var sign: String = "+"
     var total: Double = 0
-    
-
 
     @IBAction func numberPress(_ sender: UIButton) {
         currentNumber += sender.currentTitle!
@@ -35,45 +32,7 @@ class ViewController: UIViewController {
             currentNumber = ""
         }
     }
-    
-    @IBAction func changeSign(_ sender: UIButton) {
-       /* if(currentNumber == "" && total == 0) {
-            outputLabel.text = "0"
-        } else if(sign == "+") {
-            sign = "-"
-            if(total != 0) {
-                total = -total
-                outputLabel.text = String(total)
-            } else {
-                currentNumber = sign + currentNumber
-                outputLabel.text = currentNumber
-            }
-        } else if(sign == "-"){
-            sign = "+"
-            if(total != 0) {
-                total = abs(total)
-                outputLabel.text = String(total)
-            } else {
-                currentNumber = String(currentNumber.suffix(currentNumber.count - 1))
-                outputLabel.text = currentNumber
-            }
-        }*/
-        
-        /*if(sign == "+") {
-            sign = "-"
-            currentNumber = "-" + currentNumber
-            outputLabel.text = currentNumber
-        } else if (sign == "-") {
-            sign = "+"
-            if(currentNumber != "") {
-                currentNumber = String(currentNumber.suffix(currentNumber.count - 1))
-                outputLabel.text = currentNumber
-           // let output = outputLabel.text?.index((outputLabel.text?.startIndex)!, offsetBy: (outputLabel.text?.count)!);
-                outputLabel.text = currentNumber
-            }
-        }*/
-    }
-    
+
     @IBAction func pressAdd(_ sender: UIButton) {
         if(currentNumber != "") {
             listOfNumbers.append(Double(currentNumber)!)
@@ -156,19 +115,19 @@ class ViewController: UIViewController {
             switch operation {
             case "+":
                 total += listOfNumbers[0] + listOfNumbers[1]
-                outputLabel.text = String(total)
+                checkIfDecimalIsZero(total: total)
             case "-":
                 total += listOfNumbers[0] - listOfNumbers[1]
-                outputLabel.text = String(total)
+                checkIfDecimalIsZero(total: total)
             case "*":
                 total += listOfNumbers[0] * listOfNumbers[1]
-                outputLabel.text = String(total)
+                checkIfDecimalIsZero(total: total)
             case "/":
                 total += listOfNumbers[0] / listOfNumbers[1]
-                outputLabel.text = String(total)
+                checkIfDecimalIsZero(total: total)
             case "%":
                 total += listOfNumbers[0].truncatingRemainder(dividingBy: listOfNumbers[1])
-                outputLabel.text = String(total)
+                checkIfDecimalIsZero(total: total)
             case "count":
                 outputLabel.text = String(listOfNumbers.count)
             case "avg":
@@ -177,7 +136,7 @@ class ViewController: UIViewController {
                     sumTotal += number
                 }
                 total = sumTotal / Double(listOfNumbers.count)
-                outputLabel.text = String(total)
+                checkIfDecimalIsZero(total: total)
             default:
                 total = 0
             }
@@ -187,21 +146,30 @@ class ViewController: UIViewController {
             switch operation {
             case "+":
                 total += listOfNumbers[0]
-                outputLabel.text = String(total)
+                checkIfDecimalIsZero(total: total)
             case "-":
                 total -= listOfNumbers[0]
-                outputLabel.text = String(total)
+                checkIfDecimalIsZero(total: total)
             case "*":
                 total *= listOfNumbers[0]
-                outputLabel.text = String(total)
+                checkIfDecimalIsZero(total: total)
             case "/":
                 total /= listOfNumbers[0]
-                outputLabel.text = String(total)
+                checkIfDecimalIsZero(total: total)
             default:
                 total = 0
             }
             listOfNumbers = []
             operation = ""
+        }
+    }
+    
+    func checkIfDecimalIsZero(total: Double) {
+        if(String(total).hasSuffix(".0")) {
+            let decimal: String.Index = String(total).index(of: ".")!
+            outputLabel.text = String(String(total)[..<decimal])
+        } else {
+            outputLabel.text = String(total)
         }
     }
 
