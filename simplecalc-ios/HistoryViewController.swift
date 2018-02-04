@@ -8,8 +8,10 @@
 
 import UIKit
 
-class historyViewController: UIViewController {
+class HistoryViewController: UIViewController {
+    
 
+    @IBOutlet weak var historyScrollView: UIScrollView!
     var history: [String] = []
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -19,24 +21,20 @@ class historyViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        historyScrollView.contentSize = CGSize(width: 600, height: 800)
+        var calculationSpacing = 0
+        for calculation in history {
+            let calculationLabel = UILabel(frame: CGRect(x: 0, y: calculationSpacing, width: 600, height: 50))
+            calculationLabel.text = calculation
+            calculationLabel.textColor = UIColor.white
+            calculationSpacing = calculationSpacing + 50
+            historyScrollView.addSubview(calculationLabel)
+        }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

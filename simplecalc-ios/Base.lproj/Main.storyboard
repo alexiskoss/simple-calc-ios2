@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -199,7 +200,7 @@
                                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
                                                 </variation>
                                                 <connections>
-                                                    <action selector="clearPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s1g-z7-Q0L"/>
+                                                    <segue destination="KzX-Yf-EKG" kind="show" id="TYI-OD-Hz2"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hEB-MW-P4X">
@@ -676,38 +677,40 @@
         <!--History View Controller-->
         <scene sceneID="58O-H0-LfJ">
             <objects>
-                <viewController id="KzX-Yf-EKG" customClass="historyViewController" customModule="simplecalc_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="KzX-Yf-EKG" customClass="HistoryViewController" customModule="simplecalc_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9Ex-Ze-lp4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y2g-Lh-CWe">
-                                <rect key="frame" x="150" y="600" width="74" height="47"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
-                                <state key="normal" title="return">
-                                    <color key="titleColor" red="0.31788691000000002" green="0.32501189720000001" blue="0.32185730299999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W6I-lV-y0E">
+                                <rect key="frame" x="16" y="20" width="343" height="563"/>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZu-jv-Pj7">
+                                <rect key="frame" x="149.5" y="608" width="76" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="go back">
+                                    <color key="titleColor" red="0.22222095729999999" green="0.85112136599999999" blue="0.92381614450000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W6I-lV-y0E">
-                                <rect key="frame" x="16" y="20" width="343" height="572"/>
-                            </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.050969488918781281" green="0.050986640155315399" blue="0.050968408584594727" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="y2g-Lh-CWe" firstAttribute="top" secondItem="W6I-lV-y0E" secondAttribute="bottom" constant="8" id="11d-07-mfR"/>
-                            <constraint firstItem="W6I-lV-y0E" firstAttribute="top" secondItem="ARL-SK-gZR" secondAttribute="top" id="4ct-Ah-3oW"/>
-                            <constraint firstItem="ARL-SK-gZR" firstAttribute="bottom" secondItem="y2g-Lh-CWe" secondAttribute="bottom" constant="20" id="Nh6-3T-vch"/>
-                            <constraint firstItem="W6I-lV-y0E" firstAttribute="leading" secondItem="ARL-SK-gZR" secondAttribute="leading" constant="16" id="OlN-DS-Dsa"/>
-                            <constraint firstItem="y2g-Lh-CWe" firstAttribute="centerX" secondItem="W6I-lV-y0E" secondAttribute="centerX" id="X6o-DB-kgf"/>
-                            <constraint firstItem="ARL-SK-gZR" firstAttribute="trailing" secondItem="W6I-lV-y0E" secondAttribute="trailing" constant="16" id="XvT-ME-4cM"/>
-                            <constraint firstItem="y2g-Lh-CWe" firstAttribute="top" secondItem="W6I-lV-y0E" secondAttribute="bottom" constant="8" id="flL-Ey-Ceh"/>
+                            <constraint firstItem="W6I-lV-y0E" firstAttribute="leading" secondItem="9Ex-Ze-lp4" secondAttribute="leadingMargin" id="2MJ-lO-z5F"/>
+                            <constraint firstItem="ARL-SK-gZR" firstAttribute="bottom" secondItem="kZu-jv-Pj7" secondAttribute="bottom" constant="20" id="2op-3D-MaW"/>
+                            <constraint firstItem="W6I-lV-y0E" firstAttribute="centerX" secondItem="9Ex-Ze-lp4" secondAttribute="centerX" id="4SB-z3-TYV"/>
+                            <constraint firstItem="kZu-jv-Pj7" firstAttribute="top" secondItem="W6I-lV-y0E" secondAttribute="bottom" constant="25" id="d5U-uG-uLp"/>
+                            <constraint firstItem="kZu-jv-Pj7" firstAttribute="centerX" secondItem="9Ex-Ze-lp4" secondAttribute="centerX" id="g2b-kV-iFb"/>
+                            <constraint firstItem="W6I-lV-y0E" firstAttribute="top" secondItem="ARL-SK-gZR" secondAttribute="top" id="jWS-1r-zzP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ARL-SK-gZR"/>
                     </view>
+                    <connections>
+                        <outlet property="historyScrollView" destination="W6I-lV-y0E" id="YhQ-ac-U60"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mm0-fB-579" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1334" y="-143"/>
+            <point key="canvasLocation" x="1766" y="-153"/>
         </scene>
     </scenes>
 </document>

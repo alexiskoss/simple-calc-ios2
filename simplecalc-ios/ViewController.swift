@@ -19,13 +19,16 @@ class ViewController: UIViewController {
     var history: [String] = []
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let historyView = segue.destination as! historyViewController
+        let historyView = segue.destination as! HistoryViewController
         historyView.history = history
     }
 
     @IBAction func numberPress(_ sender: UIButton) {
         currentNumber += sender.currentTitle!
         outputLabel.text = currentNumber
+        if(operation == "" && total > 0) {
+            total = 0
+        }
     }
     
     @IBAction func clearPress(_ sender: UIButton) {
@@ -98,9 +101,9 @@ class ViewController: UIViewController {
         }
         total = Double(factorialTotal)
         outputLabel.text = String(total)
+        history.append("\(currentNumber) factorial = \(factorialTotal)")
         currentNumber = ""
         listOfNumbers = []
-        history.append("\(currentNumber) factorial = \(factorialTotal)")
     }
     
     @IBAction func pressMod(_ sender: UIButton) {
@@ -141,7 +144,7 @@ class ViewController: UIViewController {
                 history.append("\(listOfNumbers[0]) % \(listOfNumbers[1]) = \(total)")
             case "count":
                 outputLabel.text = String(listOfNumbers.count)
-                
+                history.append("\(listOfNumbers) count = \(total)")
             case "avg":
                 var sumTotal: Double = 0
                 for number in listOfNumbers {
@@ -185,8 +188,10 @@ class ViewController: UIViewController {
         if(String(total).hasSuffix(".0")) {
             let decimal: String.Index = String(total).index(of: ".")!
             outputLabel.text = String(String(total)[..<decimal])
+            operation = ""
         } else {
             outputLabel.text = String(total)
+            operation = ""
         }
     }
 
