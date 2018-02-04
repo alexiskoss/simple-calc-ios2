@@ -23,22 +23,28 @@
                                 <rect key="frame" x="20" y="40" width="335" height="607"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="PvX-wu-BCq">
-                                        <rect key="frame" x="0.0" y="0.0" width="335" height="80"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="147.5"/>
                                         <color key="backgroundColor" red="0.050969488918781281" green="0.050986640155315399" blue="0.050968408584594727" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="80" id="Uqd-33-nTG"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="80"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="100"/>
                                         <color key="textColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=compact-widthClass=compact">
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="60"/>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="65"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="80"/>
+                                        </variation>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="fyM-K9-cWo">
-                                        <rect key="frame" x="0.0" y="88" width="335" height="79"/>
+                                        <rect key="frame" x="0.0" y="155.5" width="335" height="68.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DFJ-Yj-K2L">
-                                                <rect key="frame" x="0.0" y="0.0" width="78" height="79"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="78" height="68.5"/>
                                                 <color key="backgroundColor" red="0.62136465311050415" green="0.91454863548278809" blue="0.92441970109939575" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="28"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="45"/>
                                                 <state key="normal" title="count">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -48,14 +54,23 @@
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="pressCount:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lsc-7r-Zl3"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uyb-yi-gn6">
-                                                <rect key="frame" x="86" y="0.0" width="77.5" height="79"/>
+                                                <rect key="frame" x="86" y="0.0" width="77.5" height="68.5"/>
                                                 <color key="backgroundColor" red="0.62136465311050415" green="0.91454863548278809" blue="0.92441970109939575" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="28"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="45"/>
                                                 <state key="normal" title="avg">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -65,14 +80,23 @@
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="pressAvg:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pXe-Ia-uWW"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tdy-Gu-Cxd">
-                                                <rect key="frame" x="171.5" y="0.0" width="78" height="79"/>
+                                                <rect key="frame" x="171.5" y="0.0" width="78" height="68.5"/>
                                                 <color key="backgroundColor" red="0.62136465311050415" green="0.91454863548278809" blue="0.92441970109939575" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="28"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="45"/>
                                                 <state key="normal" title="fact">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -82,14 +106,23 @@
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="pressFact:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hlT-W4-emz"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="59K-bh-LjL">
-                                                <rect key="frame" x="257.5" y="0.0" width="77.5" height="79"/>
+                                                <rect key="frame" x="257.5" y="0.0" width="77.5" height="68.5"/>
                                                 <color key="backgroundColor" red="0.62384034592770632" green="0.91401858514208278" blue="0.92381800520000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="28"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="45"/>
                                                 <state key="normal" title="mod">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -99,25 +132,28 @@
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="pressMod:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0le-xl-Hx7"/>
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="80" id="Z88-ou-3XP"/>
-                                        </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Jby-rP-5L2">
-                                        <rect key="frame" x="0.0" y="175" width="335" height="80"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Jby-rP-5L2">
+                                        <rect key="frame" x="0.0" y="232" width="335" height="69"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Nh-fL-0fO">
-                                                <rect key="frame" x="0.0" y="0.0" width="250" height="80"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="106.5" height="69"/>
                                                 <color key="backgroundColor" red="0.3178869099958323" green="0.32501189720812185" blue="0.32185730304261356" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="LGZ-sd-XLf"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="34"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="45"/>
                                                 <state key="normal" title="C">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -127,17 +163,49 @@
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="28"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="28"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="28"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="clearPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EcV-aS-Neh"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hEB-MW-P4X">
-                                                <rect key="frame" x="258" y="0.0" width="77" height="80"/>
-                                                <color key="backgroundColor" red="0.22231840480000001" green="0.8497880967" blue="0.92381800520000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="77" id="hf5-so-0yL"/>
-                                                </constraints>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="irt-tm-3NO">
+                                                <rect key="frame" x="114.5" y="0.0" width="106" height="69"/>
+                                                <color key="backgroundColor" red="0.31788691000000002" green="0.32501189720000001" blue="0.32185730299999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="45"/>
+                                                <state key="normal" title="history">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="40"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="clearPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s1g-z7-Q0L"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hEB-MW-P4X">
+                                                <rect key="frame" x="228.5" y="0.0" width="106.5" height="69"/>
+                                                <color key="backgroundColor" red="0.22231840480000001" green="0.8497880967" blue="0.92381800520000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="65"/>
                                                 <state key="normal" title="÷">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -147,22 +215,28 @@
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="30"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="32"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="32"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="pressDivide:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qg2-E3-i5y"/>
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="80" id="vah-Fg-ufD"/>
-                                        </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="quh-y7-6G8">
-                                        <rect key="frame" x="0.0" y="263" width="335" height="80"/>
+                                        <rect key="frame" x="0.0" y="309" width="335" height="68"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MpV-gk-RpD">
-                                                <rect key="frame" x="0.0" y="0.0" width="78" height="80"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="78" height="68"/>
                                                 <color key="backgroundColor" red="0.20535462199999999" green="0.20968829310000001" blue="0.20509145710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="34"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="45"/>
                                                 <state key="normal" title="7">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -172,14 +246,23 @@
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="28"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="28"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="28"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="numberPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q4m-aP-WrB"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMp-7F-2LX">
-                                                <rect key="frame" x="86" y="0.0" width="77.5" height="80"/>
+                                                <rect key="frame" x="86" y="0.0" width="77.5" height="68"/>
                                                 <color key="backgroundColor" red="0.2038016319" green="0.2079463899" blue="0.20377579330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="34"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="45"/>
                                                 <state key="normal" title="8">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -189,14 +272,23 @@
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="28"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="28"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="28"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="numberPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qce-HA-qU0"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tHt-mO-Fiq">
-                                                <rect key="frame" x="171.5" y="0.0" width="78" height="80"/>
+                                                <rect key="frame" x="171.5" y="0.0" width="78" height="68"/>
                                                 <color key="backgroundColor" red="0.2038016319" green="0.2079463899" blue="0.20377579330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="34"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="45"/>
                                                 <state key="normal" title="9">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -206,14 +298,23 @@
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="28"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="28"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="28"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="numberPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V2D-SE-rID"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y0V-Xh-zrH">
-                                                <rect key="frame" x="257.5" y="0.0" width="77.5" height="80"/>
+                                                <rect key="frame" x="257.5" y="0.0" width="77.5" height="68"/>
                                                 <color key="backgroundColor" red="0.22231840480000001" green="0.8497880967" blue="0.92381800520000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="45"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="65"/>
                                                 <state key="normal" title="×">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -223,22 +324,28 @@
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="30"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="32"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="32"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="pressMultiply:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jet-3C-kJ5"/>
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="80" id="S8u-5Y-OGe"/>
-                                        </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Q4Q-OA-1GO">
-                                        <rect key="frame" x="0.0" y="351" width="335" height="80"/>
+                                        <rect key="frame" x="0.0" y="385" width="335" height="68.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pdh-NA-7uk">
-                                                <rect key="frame" x="0.0" y="0.0" width="78" height="80"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="78" height="68.5"/>
                                                 <color key="backgroundColor" red="0.20535462199999999" green="0.20968829310000001" blue="0.20509145710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="34"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="45"/>
                                                 <state key="normal" title="4">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -248,14 +355,23 @@
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="28"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="28"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="28"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="numberPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5XZ-RX-ZZc"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fgU-AZ-Khj">
-                                                <rect key="frame" x="86" y="0.0" width="77.5" height="80"/>
+                                                <rect key="frame" x="86" y="0.0" width="77.5" height="68.5"/>
                                                 <color key="backgroundColor" red="0.2038016319" green="0.2079463899" blue="0.20377579330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="34"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="45"/>
                                                 <state key="normal" title="5">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -265,14 +381,23 @@
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="28"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="28"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="28"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="numberPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q2W-Zh-Px5"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rkm-zE-zYB">
-                                                <rect key="frame" x="171.5" y="0.0" width="78" height="80"/>
+                                                <rect key="frame" x="171.5" y="0.0" width="78" height="68.5"/>
                                                 <color key="backgroundColor" red="0.2038016319" green="0.2079463899" blue="0.20377579330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="34"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="45"/>
                                                 <state key="normal" title="6">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -282,14 +407,23 @@
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="28"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="28"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="28"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="numberPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y1q-f9-7nr"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qYM-hx-9M2">
-                                                <rect key="frame" x="257.5" y="0.0" width="77.5" height="80"/>
+                                                <rect key="frame" x="257.5" y="0.0" width="77.5" height="68.5"/>
                                                 <color key="backgroundColor" red="0.22231840480000001" green="0.8497880967" blue="0.92381800520000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="45"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="65"/>
                                                 <state key="normal" title="-">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -299,22 +433,28 @@
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="30"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="32"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="32"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="pressSubtract:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dpv-dw-n64"/>
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="80" id="k8E-Ub-95x"/>
-                                        </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="hq5-S4-ZWa">
-                                        <rect key="frame" x="0.0" y="439" width="335" height="80"/>
+                                        <rect key="frame" x="0.0" y="461.5" width="335" height="68.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LIN-wy-RXs">
-                                                <rect key="frame" x="0.0" y="0.0" width="78" height="80"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="78" height="68.5"/>
                                                 <color key="backgroundColor" red="0.20535462203591345" green="0.20968829314720816" blue="0.20509145709266835" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="34"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="45"/>
                                                 <state key="normal" title="1">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -323,15 +463,25 @@
                                                         <integer key="value" value="40"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="titleLabel.adjustsFontSizeToFitWidth" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="28"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="28"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="28"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="numberPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oPw-Zh-51g"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gpm-I0-0DR">
-                                                <rect key="frame" x="86" y="0.0" width="77.5" height="80"/>
+                                                <rect key="frame" x="86" y="0.0" width="77.5" height="68.5"/>
                                                 <color key="backgroundColor" red="0.20380163192749023" green="0.20794638991355896" blue="0.2037757933139801" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="34"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="45"/>
                                                 <state key="normal" title="2">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -341,14 +491,23 @@
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="28"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="28"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="28"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="numberPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XMi-ma-QdF"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IbD-A3-yg0">
-                                                <rect key="frame" x="171.5" y="0.0" width="78" height="80"/>
+                                                <rect key="frame" x="171.5" y="0.0" width="78" height="68.5"/>
                                                 <color key="backgroundColor" red="0.20380163192749023" green="0.20794638991355896" blue="0.2037757933139801" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="34"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="45"/>
                                                 <state key="normal" title="3">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -358,14 +517,23 @@
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="28"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="28"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="28"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="numberPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="piD-cy-R87"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HHY-sq-tCX">
-                                                <rect key="frame" x="257.5" y="0.0" width="77.5" height="80"/>
+                                                <rect key="frame" x="257.5" y="0.0" width="77.5" height="68.5"/>
                                                 <color key="backgroundColor" red="0.22231840480000001" green="0.8497880967" blue="0.92381800520000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="45"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="65"/>
                                                 <state key="normal" title="+">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -375,25 +543,28 @@
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="30"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="32"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="32"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="pressAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="88F-1e-OYV"/>
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="80" id="bE9-6q-s5X"/>
-                                        </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="7GU-7d-I7Y">
-                                        <rect key="frame" x="0.0" y="527" width="335" height="80"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="7GU-7d-I7Y">
+                                        <rect key="frame" x="0.0" y="538" width="335" height="69"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TWn-5w-LQH">
-                                                <rect key="frame" x="0.0" y="0.0" width="165" height="80"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="106.5" height="69"/>
                                                 <color key="backgroundColor" red="0.20535462199999999" green="0.20968829310000001" blue="0.20509145710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="164" id="124-Sx-qvh"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="34"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="45"/>
                                                 <state key="normal" title="0">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -403,17 +574,23 @@
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="28"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="28"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="28"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="numberPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FeR-4F-h8U"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r6Z-gr-oXK">
-                                                <rect key="frame" x="173" y="0.0" width="77" height="80"/>
+                                                <rect key="frame" x="114.5" y="0.0" width="106" height="69"/>
                                                 <color key="backgroundColor" red="0.20535462199999999" green="0.20968829310000001" blue="0.20509145710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="77" id="dNt-bj-fne"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="45"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="65"/>
                                                 <state key="normal" title=".">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -423,17 +600,23 @@
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="30"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="30"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="32"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="numberPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tyV-zi-TtR"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WuX-hw-Ia1">
-                                                <rect key="frame" x="258" y="0.0" width="77" height="80"/>
+                                                <rect key="frame" x="228.5" y="0.0" width="106.5" height="69"/>
                                                 <color key="backgroundColor" red="0.22231840480000001" green="0.8497880967" blue="0.92381800520000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="77" id="FCj-2i-Cco"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="45"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="65"/>
                                                 <state key="normal" title="=">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -443,16 +626,29 @@
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="30"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="32"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="32"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="pressEqual:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XxO-oT-LTI"/>
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="80" id="p6D-4Z-tJs"/>
-                                        </constraints>
                                     </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="Jby-rP-5L2" firstAttribute="height" secondItem="fyM-K9-cWo" secondAttribute="height" id="A2j-pK-yBh"/>
+                                    <constraint firstItem="7GU-7d-I7Y" firstAttribute="height" secondItem="fyM-K9-cWo" secondAttribute="height" id="N3N-GM-MGn"/>
+                                    <constraint firstItem="Q4Q-OA-1GO" firstAttribute="height" secondItem="fyM-K9-cWo" secondAttribute="height" id="S9A-rJ-fSJ"/>
+                                    <constraint firstItem="hq5-S4-ZWa" firstAttribute="height" secondItem="fyM-K9-cWo" secondAttribute="height" id="SZN-yD-4TZ"/>
+                                    <constraint firstItem="quh-y7-6G8" firstAttribute="height" secondItem="fyM-K9-cWo" secondAttribute="height" id="UcQ-bd-i9J"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.055242703045685237" green="0.055242703045685237" blue="0.055242703045685237" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
