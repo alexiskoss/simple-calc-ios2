@@ -1,5 +1,5 @@
 //
-//  HistoryViewController.swift
+//  historyViewController.swift
 //  simplecalc-ios
 //
 //  Created by Alexis Koss on 2/3/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HistoryViewController: UIViewController {
+class historyViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
