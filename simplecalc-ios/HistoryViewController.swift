@@ -10,6 +10,13 @@ import UIKit
 
 class historyViewController: UIViewController {
 
+    var history: [String] = []
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let mainView = segue.destination as! ViewController
+        mainView.history = history
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

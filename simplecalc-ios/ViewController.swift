@@ -16,6 +16,12 @@ class ViewController: UIViewController {
     var operation: String = ""
     var sign: String = "+"
     var total: Double = 0
+    var history: [String] = []
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let historyView = segue.destination as! historyViewController
+        historyView.history = history
+    }
 
     @IBAction func numberPress(_ sender: UIButton) {
         currentNumber += sender.currentTitle!
@@ -82,7 +88,6 @@ class ViewController: UIViewController {
     }
     
     @IBAction func pressFact(_ sender: UIButton) {
-        //var factorial = Int(currentNumber)
         var factorialTotal: Int = 1
         if(currentNumber != "") {
             if let number = Int(currentNumber) {
@@ -95,6 +100,7 @@ class ViewController: UIViewController {
         outputLabel.text = String(total)
         currentNumber = ""
         listOfNumbers = []
+        history.append("\(currentNumber) factorial = \(factorialTotal)")
     }
     
     @IBAction func pressMod(_ sender: UIButton) {
@@ -116,20 +122,26 @@ class ViewController: UIViewController {
             case "+":
                 total += listOfNumbers[0] + listOfNumbers[1]
                 checkIfDecimalIsZero(total: total)
+                history.append("\(listOfNumbers[0]) + \(listOfNumbers[1]) = \(total)")
             case "-":
                 total += listOfNumbers[0] - listOfNumbers[1]
                 checkIfDecimalIsZero(total: total)
+                history.append("\(listOfNumbers[0]) - \(listOfNumbers[1]) = \(total)")
             case "*":
                 total += listOfNumbers[0] * listOfNumbers[1]
                 checkIfDecimalIsZero(total: total)
+                history.append("\(listOfNumbers[0]) * \(listOfNumbers[1]) = \(total)")
             case "/":
                 total += listOfNumbers[0] / listOfNumbers[1]
                 checkIfDecimalIsZero(total: total)
+                history.append("\(listOfNumbers[0]) / \(listOfNumbers[1]) = \(total)")
             case "%":
                 total += listOfNumbers[0].truncatingRemainder(dividingBy: listOfNumbers[1])
                 checkIfDecimalIsZero(total: total)
+                history.append("\(listOfNumbers[0]) % \(listOfNumbers[1]) = \(total)")
             case "count":
                 outputLabel.text = String(listOfNumbers.count)
+                
             case "avg":
                 var sumTotal: Double = 0
                 for number in listOfNumbers {
@@ -143,19 +155,24 @@ class ViewController: UIViewController {
             listOfNumbers = []
             operation = ""
         } else if(total != 0) { //allows you to perform operations on equaled totals
+            let originalTotal = total
             switch operation {
             case "+":
                 total += listOfNumbers[0]
                 checkIfDecimalIsZero(total: total)
+                history.append("\(originalTotal) + \(listOfNumbers[0]) = \(total)")
             case "-":
                 total -= listOfNumbers[0]
                 checkIfDecimalIsZero(total: total)
+                history.append("\(originalTotal) - \(listOfNumbers[0]) = \(total)")
             case "*":
                 total *= listOfNumbers[0]
                 checkIfDecimalIsZero(total: total)
+                history.append("\(originalTotal) * \(listOfNumbers[0]) = \(total)")
             case "/":
                 total /= listOfNumbers[0]
                 checkIfDecimalIsZero(total: total)
+                history.append("\(originalTotal) / \(listOfNumbers[0]) = \(total)")
             default:
                 total = 0
             }
