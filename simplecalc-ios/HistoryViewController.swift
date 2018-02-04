@@ -21,7 +21,7 @@ class HistoryViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        historyScrollView.contentSize = CGSize(width: 600, height: 800)
+        historyScrollView.contentSize = CGSize(width: 600, height: 1500)
         var calculationSpacing = 0
         for calculation in history {
             let calculationLabel = UILabel(frame: CGRect(x: 0, y: calculationSpacing, width: 600, height: 50))
